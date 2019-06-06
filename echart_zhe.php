@@ -45,6 +45,14 @@ echarts实现折现图
     var mychart = echarts.init(document.getElementById("container"));
     // 进行相关项的设置，也就是所谓的搭搭骨架，方便待会的ajax异步的数据填充
     var option = {
+        title: {
+            text: '姓名数量统计图',
+            left: 'center',
+            top: 20,
+            textStyle: {
+                color: '#ccc'
+            }
+        },
         xAxis: {
             type: 'category',
             data: names
